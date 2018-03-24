@@ -17,16 +17,6 @@ body{
     position: relative;
 }
 
-/* .badger-container {
-    width: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-} */
-
-/* ears */
-
 .ears{
     width: 90px;
     height: 140px;
@@ -54,7 +44,6 @@ body{
     background-color: white;
     width: 50px;
     height: 60px;
-    /* box-shadow: 220px 0 white; */
 }
 
 .hole::after{
@@ -65,7 +54,6 @@ body{
     background-color: gray;
     width: 35px;
     height: 35px;
-    /* box-shadow: 215px 0 gray; */
 }
 
 .ears::before{
@@ -76,7 +64,6 @@ body{
     position: absolute;
     left: 1px;
     top: 1px;
-    /* box-shadow: 210px 0 white; */
 }
 
 /* head styling */
@@ -96,26 +83,70 @@ body{
     position: absolute;
     width: 30px;
     height: 30px;
-    top: 100px;
+    
     right: 75px;
     background-color: white;
-    box-shadow: -95px 95px white;
     z-index: 100;
+    border: 1px solid black;
+}
+
+.right-eye{
+    right: 75px;
+    top: 100px;
+}
+
+.left-eye{
+    left: 100px;
+    top: 190px;
 }
 
 /* iris */
 
-.eye::after{
+.right-eye::after{
     position: absolute;
     content: '';
     width: 8px;
     height: 8px;
-    top: 10px;
+    top: 15px;
     left: 10px;
-    background-color: rgb(78, 149, 207);
-    box-shadow: -95px 95px rgb(78, 149, 207),
-    2px 1px gray,
-    -93px 96px gray;
+    background-color: black;
+    z-index: 110;
+}
+
+/* face-line */
+
+.right-eye::before{
+    content: '';
+    width: 5px;
+    height: 120px;
+    background-color: gray;
+    position: absolute;
+    top: 30px;
+    left: 35px;
+    transform: rotate(120deg);
+}
+
+.left-eye::before{
+    content: '';
+    width: 5px;
+    height: 120px;
+    background-color: gray;
+    position: absolute;
+    top: -25px;
+    left: 90px;
+    transform: rotate(155deg);
+}
+
+/* iris */
+
+.left-eye::after{
+    position: absolute;
+    content: '';
+    width: 8px;
+    height: 8px;
+    top: 15px;
+    left: 10px;
+    background-color: black;
     z-index: 110;
 }
 
@@ -153,14 +184,14 @@ body{
     left: 245px;
 }
 
-/* nose */
+/* snot */
 
 .nose{
     position: absolute;
     width: 50px;
     height: 50px;
     bottom: 10px;
-    right: 15px;
+    right: 10px;
     background-color: rgb(59, 59, 59);
 }
 
@@ -176,7 +207,6 @@ body{
     top: 15px;
     box-shadow: 0 25px black;
     transform: rotate(45deg);
-    /* border-radius: 10px; */
 }
 
 .nose::after{
@@ -185,11 +215,7 @@ body{
     height: 50px;
     position: absolute;
     background-color: black;
-    top: -10px;
-    left: -10px;
+    top: -5px;
+    left: -5px;
     z-index: -100;
-    /* box-shadow: 0 25px black; */
-    /* left: -20px;
-    top: -22.5px; */
-    /* transform: rotate(45deg); */
 }
