@@ -3,38 +3,49 @@
     margin: 0;
 }
 
-.container {
-    position: absolute;
-    height: 60%;
-    width: 100%;
-    top: 50%;
-    transform: translateY(-50%);
+body{
     display: flex;
+    align-items: center;
     justify-content: center;
-    /* background-color: yellow; */
 }
 
-.badger-container {
+.container {
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* .badger-container {
     width: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-}
+} */
 
 /* ears */
 
 .ears{
     width: 90px;
-    height: 180px;
+    height: 140px;
     position: absolute;
     background-color: black;
-    top: 0;
-    left: 100px;
-    box-shadow: 210px 0 black;
+    top: 50px;
 }
 
-/* hearholes */
+.ear-left{
+    transform: skewY(20deg);
+
+}
+
+.ear-right{
+    right: 0;
+    transform: skewY(-20deg);
+}
+
+/* earholes */
 
 .hole{
     position: absolute;
@@ -43,7 +54,7 @@
     background-color: white;
     width: 50px;
     height: 60px;
-    box-shadow: 220px 0 white;
+    /* box-shadow: 220px 0 white; */
 }
 
 .hole::after{
@@ -54,7 +65,7 @@
     background-color: gray;
     width: 35px;
     height: 35px;
-    box-shadow: 215px 0 gray;
+    /* box-shadow: 215px 0 gray; */
 }
 
 .ears::before{
@@ -65,7 +76,7 @@
     position: absolute;
     left: 1px;
     top: 1px;
-    box-shadow: 210px 0 white;
+    /* box-shadow: 210px 0 white; */
 }
 
 /* head styling */
